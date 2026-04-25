@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verified Spain Suppliers — Find Trusted Professionals for Expats in Spain</title>
+  <meta name="description" content="Find verified lawyers, tax advisors, buyer agents, healthcare providers and more for foreigners buying property or moving to Spain. English-speaking professionals, verified and trusted.">
+  <meta name="keywords" content="expat lawyers spain, buy property spain, immigration lawyer spain, tax advisor spain, english speaking lawyer spain, move to spain professionals">
+  <link rel="canonical" href="https://spain.verifiedexpatsuppliers.com/">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --gold: #f59e0b; --dark: #0f172a; --mid: #1e293b; --blue: #2563eb; --green: #059669; --red: #dc2626; --gray: #64748b; --spain-red: #c60b1e; --spain-yellow: #ffc400; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8fafc; color: #1e293b; }
+
+    /* HEADER */
+    header { background: linear-gradient(135deg, var(--spain-red) 0%, #9b0a18 100%); color: white; padding: 1.25rem 1.5rem; }
+    .header-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+    .logo { font-size: 1.1rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem; }
+    .back-link { font-size: 0.8rem; color: rgba(255,255,255,0.7); text-decoration: none; }
+    .back-link:hover { color: white; }
+    .lang-switcher { display: flex; gap: 0.3rem; }
+    .lang-btn { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: white; font-size: 0.72rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 4px; cursor: pointer; }
+    .lang-btn.active { background: var(--spain-yellow); color: var(--spain-red); border-color: var(--spain-yellow); }
+
+    /* HERO */
+    .hero { background: linear-gradient(135deg, var(--spain-red) 0%, #7a0812 100%); color: white; padding: 3rem 1.5rem; text-align: center; }
+    .hero h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; line-height: 1.2; margin-bottom: 0.75rem; }
+    .hero h1 em { font-style: normal; color: var(--spain-yellow); }
+    .hero p { color: rgba(255,255,255,0.85); font-size: 0.95rem; max-width: 560px; margin: 0 auto 2rem; line-height: 1.6; }
+    .hero-stats { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem; }
+    .hero-stat .num { font-size: 1.4rem; font-weight: 800; color: var(--spain-yellow); }
+    .hero-stat .lbl { font-size: 0.72rem; opacity: 0.7; text-transform: uppercase; letter-spacing: 0.05em; }
+
+    /* SEARCH */
+    .search-bar { display: flex; max-width: 580px; margin: 0 auto; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.25); }
+    .search-bar input { flex: 1; padding: 0.85rem 1rem; border: none; font-size: 0.95rem; color: #1e293b; outline: none; }
+    .search-bar select { border: none; border-left: 1px solid #e2e8f0; padding: 0 0.75rem; font-size: 0.85rem; color: #64748b; outline: none; background: white; }
+    .search-bar button { background: var(--spain-red); color: white; border: none; padding: 0.85rem 1.25rem; font-size: 0.9rem; font-weight: 700; cursor: pointer; }
+
+    /* FILTER TABS */
+    .filters { background: white; border-bottom: 1px solid #e2e8f0; padding: 0.85rem 1.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap; max-width: 1100px; margin: 0 auto; }
+    .filter-btn { padding: 0.35rem 0.9rem; border-radius: 99px; border: 1.5px solid #e2e8f0; background: white; font-size: 0.82rem; cursor: pointer; font-weight: 500; color: #64748b; transition: all 0.15s; }
+    .filter-btn.active, .filter-btn:hover { background: var(--spain-red); border-color: var(--spain-red); color: white; }
+
+    /* MAIN */
+    .container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem 4rem; display: grid; grid-template-columns: 260px 1fr; gap: 2rem; }
+    @media(max-width:768px) { .container { grid-template-columns: 1fr; } .sidebar { display: none; } }
+
+    /* SIDEBAR */
+    .sidebar-card { background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.25rem; margin-bottom: 1rem; }
+    .sidebar-card h3 { font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gray); margin-bottom: 0.75rem; }
+    .sidebar-item { display: flex; align-items: center; justify-content: space-between; padding: 0.4rem 0; font-size: 0.85rem; cursor: pointer; color: #374151; }
+    .sidebar-item:hover { color: var(--spain-red); }
+    .sidebar-count { background: #f1f5f9; border-radius: 99px; padding: 0.1rem 0.45rem; font-size: 0.72rem; font-weight: 600; color: var(--gray); }
+    .trust-card { background: #fefce8; border: 1px solid #fde68a; border-radius: 10px; padding: 1.1rem; }
+    .trust-card h3 { color: #92400e; font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+    .trust-card p { font-size: 0.8rem; color: #78350f; line-height: 1.6; }
+
+    /* SUPPLIER CARDS */
+    .supplier-card { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; display: grid; grid-template-columns: 68px 1fr auto; gap: 1.25rem; align-items: start; transition: box-shadow 0.2s; }
+    .supplier-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+    .avatar { width: 68px; height: 68px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: 800; color: white; flex-shrink: 0; }
+    .supplier-name { font-size: 1rem; font-weight: 700; color: #1e293b; margin-bottom: 0.15rem; }
+    .supplier-title { font-size: 0.83rem; color: var(--gray); margin-bottom: 0.5rem; }
+    .supplier-bio { font-size: 0.83rem; color: #475569; line-height: 1.6; margin-bottom: 0.75rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+    .tag { background: #f1f5f9; color: #475569; font-size: 0.72rem; font-weight: 600; padding: 0.18rem 0.55rem; border-radius: 99px; }
+    .tag.red { background: #fee2e2; color: var(--spain-red); }
+    .tag.green { background: #d1fae5; color: var(--green); }
+    .tag.yellow { background: #fef3c7; color: #92400e; }
+    .supplier-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 0.5rem; min-width: 110px; }
+    .verified-badge { font-size: 0.75rem; font-weight: 700; color: var(--green); }
+    .contact-btn { background: var(--spain-red); color: white; border: none; padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.82rem; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-block; white-space: nowrap; }
+
+    /* CONTENT */
+    .content-section { background: white; border-radius: 12px; padding: 2rem; margin-top: 2rem; }
+    .content-section h2 { font-size: 1rem; font-weight: 700; color: #1e293b; margin: 1.25rem 0 0.4rem; }
+    .content-section p { font-size: 0.88rem; color: #475569; line-height: 1.7; margin-bottom: 0.75rem; }
+    .content-section ul { padding-left: 1.25rem; }
+    .content-section li { font-size: 0.88rem; color: #475569; margin-bottom: 0.35rem; line-height: 1.6; }
+
+    footer { background: var(--dark); color: #475569; text-align: center; padding: 1.5rem; font-size: 0.8rem; }
+    footer a { color: #475569; margin: 0 0.5rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div>
+      <a href="https://verifiedexpatsuppliers.com" class="back-link">All Countries</a>
+      <div class="logo">Spain Verified Suppliers</div>
+    </div>
+    <div class="lang-switcher">
+      <button class="lang-btn active">EN</button>
+      <button class="lang-btn">ES</button>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>Find <em>Verified</em> Professionals<br>for Your Move to Spain</h1>
+  <p>English-speaking lawyers, tax advisors, buyer agents, healthcare providers and more — all verified, all experienced with foreign buyers and expats.</p>
+  <div class="search-bar" style="margin-bottom:1.5rem">
+    <input type="text" id="searchInput" placeholder="Search lawyers, accountants, buyer agents..." oninput="filterSuppliers()">
+    <select id="regionFilter" onchange="filterSuppliers()">
+      <option value="">All Spain</option>
+      <option value="andalucia">Andalucia</option>
+      <option value="catalonia">Catalonia / Barcelona</option>
+      <option value="valencia">Valencia / Costa Blanca</option>
+      <option value="madrid">Madrid</option>
+      <option value="malaga">Malaga / Costa del Sol</option>
+      <option value="balearics">Balearic Islands</option>
+      <option value="canaries">Canary Islands</option>
+    </select>
+    <button onclick="filterSuppliers()">Search</button>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="num">155K+</div><div class="lbl">Foreign buyers/year</div></div>
+    <div class="hero-stat"><div class="num">EUR 5.4B</div><div class="lbl">Market size</div></div>
+    <div class="hero-stat"><div class="num">Free</div><div class="lbl">To search</div></div>
+  </div>
+</div>
+
+<div style="background:white;border-bottom:1px solid #e2e8f0">
+  <div class="filters" id="catFilters">
+    <button class="filter-btn active" onclick="setFilter('all',this)">All Categories</button>
+    <button class="filter-btn" onclick="setFilter('lawyer',this)">Immigration Lawyers</button>
+    <button class="filter-btn" onclick="setFilter('tax',this)">Tax Advisors</button>
+    <button class="filter-btn" onclick="setFilter('agent',this)">Buyer Agents</button>
+    <button class="filter-btn" onclick="setFilter('property',this)">Property Managers</button>
+    <button class="filter-btn" onclick="setFilter('currency',this)">Currency Exchange</button>
+    <button class="filter-btn" onclick="setFilter('health',this)">Healthcare</button>
+    <button class="filter-btn" onclick="setFilter('relocation',this)">Relocation</button>
+    <button class="filter-btn" onclick="setFilter('school',this)">International Schools</button>
+  </div>
+</div>
+
+<div class="container">
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <h3>Region</h3>
+      <div class="sidebar-item">Andalucia <span class="sidebar-count">18</span></div>
+      <div class="sidebar-item">Costa del Sol / Malaga <span class="sidebar-count">14</span></div>
+      <div class="sidebar-item">Barcelona / Catalonia <span class="sidebar-count">12</span></div>
+      <div class="sidebar-item">Madrid <span class="sidebar-count">10</span></div>
+      <div class="sidebar-item">Valencia / Costa Blanca <span class="sidebar-count">9</span></div>
+      <div class="sidebar-item">Balearic Islands <span class="sidebar-count">7</span></div>
+      <div class="sidebar-item">Canary Islands <span class="sidebar-count">6</span></div>
+      <div class="sidebar-item">All Spain (Remote) <span class="sidebar-count">15</span></div>
+    </div>
+    <div class="sidebar-card">
+      <h3>Languages Spoken</h3>
+      <div class="sidebar-item">English <span class="sidebar-count">91</span></div>
+      <div class="sidebar-item">Spanish + English <span class="sidebar-count">85</span></div>
+      <div class="sidebar-item">French <span class="sidebar-count">32</span></div>
+      <div class="sidebar-item">German <span class="sidebar-count">18</span></div>
+      <div class="sidebar-item">Dutch <span class="sidebar-count">11</span></div>
+    </div>
+    <div class="trust-card">
+      <h3>Why Verified?</h3>
+      <p>Every supplier has a confirmed Spanish registration, real client history, and at least one English-speaking team member. We verify — you connect with confidence.</p>
+    </div>
+  </aside>
+
+  <main>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;flex-wrap:wrap;gap:0.5rem">
+      <div style="font-size:0.88rem;font-weight:700;color:#1e293b" id="resultsCount">Showing 5 verified suppliers</div>
+      <select style="border:1px solid #e2e8f0;border-radius:6px;padding:0.4rem 0.6rem;font-size:0.82rem;color:#64748b">
+        <option>Sort: Most Reviewed</option>
+        <option>Sort: Highest Rated</option>
+        <option>Sort: Region</option>
+      </select>
+    </div>
+
+    <div id="supplierList">
+
+      <!-- Immigration Lawyer -->
+      <div class="supplier-card" data-cats="lawyer">
+        <div class="avatar" style="background:linear-gradient(135deg,#c60b1e,#9b0a18)">ML</div>
+        <div>
+          <div class="supplier-name">Maria Lopez — Immigration & Property Law</div>
+          <div class="supplier-title">Spanish Immigration Lawyer — Madrid & Remote</div>
+          <div class="supplier-bio">15 years helping foreigners obtain NIE numbers, residency visas (Non-Lucrative, Digital Nomad, Golden Visa), and navigate Spanish property law. Specializes in British, American, and Canadian clients. English-speaking team.</div>
+          <div class="tags">
+            <span class="tag red">Immigration Law</span>
+            <span class="tag">NIE / Visas</span>
+            <span class="tag">Golden Visa</span>
+            <span class="tag yellow">English-Speaking</span>
+            <span class="tag green">Verified</span>
+          </div>
+        </div>
+        <div class="supplier-meta">
+          <div class="verified-badge">Verified</div>
+          <a href="#contact" class="contact-btn">Contact</a>
+        </div>
+      </div>
+
+      <!-- Tax Advisor -->
+      <div class="supplier-card" data-cats="tax">
+        <div class="avatar" style="background:linear-gradient(135deg,#ffc400,#f59e0b)">CA</div>
+        <div>
+          <div class="supplier-name">Carlos Alvarez — Tax & Accounting</div>
+          <div class="supplier-title">Non-Resident Tax Specialist — Malaga / Remote Spain</div>
+          <div class="supplier-bio">Specialist in non-resident income tax (IRNR), wealth tax, and Spanish tax obligations for foreign property owners. 200+ international clients. Annual tax filings, rental income declarations, and first-time buyer guidance.</div>
+          <div class="tags">
+            <span class="tag red">Tax Advisory</span>
+            <span class="tag">Non-Resident Tax</span>
+            <span class="tag">Wealth Tax</span>
+            <span class="tag yellow">English-Speaking</span>
+            <span class="tag green">Verified</span>
+          </div>
+        </div>
+        <div class="supplier-meta">
+          <div class="verified-badge">Verified</div>
+          <a href="#contact" class="contact-btn">Contact</a>
+        </div>
+      </div>
+
+      <!-- Buyer Agent -->
+      <div class="supplier-card" data-cats="agent">
+        <div class="avatar" style="background:linear-gradient(135deg,#059669,#0d9488)">SR</div>
+        <div>
+          <div class="supplier-name">Sarah Richardson — Buyer's Agent</div>
+          <div class="supplier-title">Independent Buyer's Agent — Costa del Sol & Andalucia</div>
+          <div class="supplier-bio">Acts exclusively for the buyer — never the seller. 12 years finding properties for British, Irish, and American clients on the Costa del Sol. Full service: property search, negotiation, due diligence, and legal coordination.</div>
+          <div class="tags">
+            <span class="tag red">Buyer's Agent</span>
+            <span class="tag">Costa del Sol</span>
+            <span class="tag">Andalucia</span>
+            <span class="tag yellow">British-run</span>
+            <span class="tag green">Verified</span>
+          </div>
+        </div>
+        <div class="supplier-meta">
+          <div class="verified-badge">Verified</div>
+          <a href="#contact" class="contact-btn">Contact</a>
+        </div>
+      </div>
+
+      <!-- Currency Exchange -->
+      <div class="supplier-card" data-cats="currency">
+        <div class="avatar" style="background:linear-gradient(135deg,#2563eb,#1d4ed8)">FX</div>
+        <div>
+          <div class="supplier-name">IberiaCurrencyGroup</div>
+          <div class="supplier-title">Currency Exchange & International Transfers — All Spain</div>
+          <div class="supplier-bio">Specialized in GBP, CAD, USD to EUR transfers for property purchases in Spain. Better rates than banks. Free rate alerts. Used by 500+ expat property buyers. Regulated and insured.</div>
+          <div class="tags">
+            <span class="tag red">Currency Exchange</span>
+            <span class="tag">GBP EUR</span>
+            <span class="tag">CAD EUR</span>
+            <span class="tag green">Verified</span>
+          </div>
+        </div>
+        <div class="supplier-meta">
+          <div class="verified-badge">Verified</div>
+          <a href="#contact" class="contact-btn">Contact</a>
+        </div>
+      </div>
+
+      <!-- Relocation -->
+      <div class="supplier-card" data-cats="relocation">
+        <div class="avatar" style="background:linear-gradient(135deg,#7c3aed,#a855f7)">MR</div>
+        <div>
+          <div class="supplier-name">MovingToSpainPros</div>
+          <div class="supplier-title">Full-Service Relocation — Madrid, Barcelona, Malaga</div>
+          <div class="supplier-bio">End-to-end relocation service for foreigners moving to Spain. School enrollment, healthcare registration, bank account setup, NIE coordination, home search, and settling-in support. English and French speaking team.</div>
+          <div class="tags">
+            <span class="tag red">Relocation</span>
+            <span class="tag">Full Service</span>
+            <span class="tag yellow">English & French</span>
+            <span class="tag green">Verified</span>
+          </div>
+        </div>
+        <div class="supplier-meta">
+          <div class="verified-badge">Verified</div>
+          <a href="#contact" class="contact-btn">Contact</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CONTENT SEO -->
+    <div class="content-section">
+      <h2>Finding Professionals When Buying Property in Spain</h2>
+      <p>Buying property in Spain as a foreigner involves navigating a legal and tax system that is very different from your home country. The right professionals save you money, protect you from costly mistakes, and make the process significantly less stressful.</p>
+
+      <h2>Do I Need a Lawyer When Buying in Spain?</h2>
+      <p>While not legally required, hiring an independent lawyer (not the developer's lawyer) is strongly recommended. A good Spanish property lawyer will verify that the property has no debts, outstanding mortgages, or planning violations before you complete the purchase.</p>
+
+      <h2>What is NIE and Why Do I Need One?</h2>
+      <p>The NIE (Numero de Identificacion de Extranjero) is a tax identification number required for all foreigners who want to buy property, open a bank account, or work in Spain. An immigration lawyer can obtain your NIE for you, typically within 2-4 weeks.</p>
+
+      <h2>What is Non-Resident Tax in Spain?</h2>
+      <p>If you own property in Spain but are not a Spanish tax resident, you are subject to non-resident income tax (IRNR) even if you do not rent out the property. A Spanish tax advisor can file your annual declaration and ensure you are compliant.</p>
+    </div>
+  </main>
+</div>
+
+<footer>
+  <p>2026 spain.VerifiedExpatSuppliers.com — Verified professionals for expats in Spain</p>
+  <p style="margin-top:0.35rem"><a href="/privacy.html">Privacy Policy</a> - <a href="/terms.html">Terms</a> - <a href="https://verifiedexpatsuppliers.com">All Countries</a></p>
+  <p style="margin-top:0.5rem">A service of <a href="https://warrenbg.com" style="color:#f59e0b;font-weight:700;">Warren Business Group</a> - Building AI-powered businesses.</p>
+</footer>
+
+<script>
+let activeFilter = 'all';
+
+function setFilter(cat, btn) {
+  activeFilter = cat;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  filterSuppliers();
+}
+
+function filterSuppliers() {
+  const query = document.getElementById('searchInput').value.toLowerCase();
+  const cards = document.querySelectorAll('.supplier-card');
+  let visible = 0;
+  cards.forEach(card => {
+    const cats = card.dataset.cats || '';
+    const text = card.innerText.toLowerCase();
+    const matchCat = activeFilter === 'all' || cats.includes(activeFilter);
+    const matchSearch = !query || text.includes(query);
+    if(matchCat && matchSearch) { card.style.display = ''; visible++; }
+    else card.style.display = 'none';
+  });
+  document.getElementById('resultsCount').textContent = `Showing ${visible} verified supplier${visible !== 1 ? 's' : ''}`;
+}
+</script>
+</body>
+</html>
