@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://spain.verifiedexpatsuppliers.com/sitemap.xml
